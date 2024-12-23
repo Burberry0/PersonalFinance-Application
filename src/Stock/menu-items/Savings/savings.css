@@ -1,0 +1,238 @@
+/* Container Styling */
+.questionnaire-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Form Title */
+  .questionnaire-container h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  /* Label Styling */
+  .questionnaire-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555555;
+    font-size: 16px;
+  }
+  
+  /* Input, Select, and Textarea Styling */
+  .questionnaire-form input,
+  .questionnaire-form select,
+  .questionnaire-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333333;
+    background-color: #f9f9f9;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Input Focus Effect */
+  .questionnaire-form input:focus,
+  .questionnaire-form select:focus,
+  .questionnaire-form textarea:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  /* Textarea Specific Styling */
+  .questionnaire-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Button Styling */
+  .questionnaire-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  .questionnaire-form button:hover {
+    background-color: #007bff;
+}
+  
+  /* Form Button Focus */
+  .questionnaire-form button:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(40, 167, 69, 0.3);
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .questionnaire-container {
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    .questionnaire-container h2 {
+      font-size: 20px;
+    }
+  
+    .questionnaire-form input,
+    .questionnaire-form select,
+    .questionnaire-form textarea,
+    .questionnaire-form button {
+      font-size: 14px;
+    }
+  }
+
+  .monthly-expenses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+  }
+  
+  .monthly-expenses {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto; /* Center chart on the page */
+}
+
+.monthly-transaction-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto 0; /* Center table and add margin on top */
+    padding-top: 20px;
+    overflow-x: auto;
+}
+
+.monthly-transaction-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.monthly-transaction-table th,
+.monthly-transaction-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px 
+}
+
+
+.monthly-transaction-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.expense-histogram-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1600px;
+  padding: 10px 0; /* Reduced padding on Y-axis to minimize gaps */
+}
+
+
+
+.wrapper {
+  display: flex;
+  gap: 20px; /* Space between bar chart and details */
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.monthly-expenses {
+  flex: 3; /* Increases width of the bar chart */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.monthly-details {
+  flex: 1; /* Decreases width of the details section */
+  min-height: 200px; /* Shrinks height to a smaller size */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  font-size: 20px;
+}
+
+.monthly-details p {
+  margin: 8px 0; /* Adds space between each line */
+  line-height: 1.5; /* Adjusts spacing within each line */
+  color: #555555;
+}
+
+.monthly-details p strong {
+  font-size: 18px; /* Makes labels slightly larger */
+  color: #000000;
+}
+
+
+.Transactions-table h4 {
+  margin-top: 10px; /* Adds space above the title */
+  margin-bottom: 20px; /* Adds more space below the title */
+  text-align: center; /* Centers the title above the table */
+  font-weight: bold;
+  font-size: 20px;
+  color: #333; /* Optional: adjust color */
+}
+
+.Transactions-table {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Space inside the container */
+  justify-content: center;
+  align-items: center;
+}
+
+.Transactions-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.Transactions-table th,
+.Transactions-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.Transactions-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.Transactions-table h4 {
+  padding-top: 5px;
+}

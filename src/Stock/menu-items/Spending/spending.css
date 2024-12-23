@@ -1,0 +1,142 @@
+.Spending-Container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 100%;
+}
+
+.ChartsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between the charts */
+    margin-bottom: 20px;
+    max-width: 1200px; /* Center and limit the width */
+    margin: 0 auto; /* Center the grid container */
+    margin-top: 10px;
+}
+
+.ChartItem {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.Histrogram {
+    justify-content: center;
+}
+
+
+.container-work {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+  }
+  
+
+  
+  /* Wrapper for chart and details side by side */
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 20px;
+  }
+  
+  /* Monthly expenses chart area */
+  .monthly-expenses {
+    flex: 2; /* Chart takes more space */
+    min-width: 300px; /* Ensures chart isn't too narrow */
+    height: 400px;
+    display: flex; 
+    justify-content: center;
+  }
+  
+  /* Monthly details section */
+  .monthly-details {
+    flex: 1;
+    min-width: 200px; 
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .monthly-details h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .monthly-details p {
+    margin: 6px 0;
+    color: #333;
+  }
+  
+  .monthly-details p strong {
+    color: #000;
+  }
+  
+  /* Transactions table */
+  .Transactions-table {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-x: auto; /* Horizontal scroll on small screens */
+  }
+  
+  .Transactions-table h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .Transactions-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .Transactions-table th,
+  .Transactions-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .Transactions-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .Transactions-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .Transactions-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .monthly-expenses,
+    .monthly-details {
+      flex: 1 1 100%;
+      min-width: 0;
+    }
+  
+    .monthly-details {
+      margin-top: 20px; /* Space above details when stacked */
+    }
+  }
+  

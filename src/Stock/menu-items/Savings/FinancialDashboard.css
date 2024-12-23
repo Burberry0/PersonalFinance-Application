@@ -1,0 +1,35 @@
+.financial-dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cash-flow-summary,
+.financial-health-score,
+.dashboard-section,
+.chart-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin: 0;
+}
+
+.chart-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+}

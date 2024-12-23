@@ -1,0 +1,67 @@
+/* Main container */
+.Login-Container {
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  height: 100vh;            /* Set height to fill the entire viewport */
+  background-color: #f9f9f9; /* Optional: add a background color */
+}
+
+/* Wrapper for the form, centered content */
+.Login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Center form elements */
+  justify-content: center;  /* Center form elements */
+  background-color: white;  /* Optional: add background to the form */
+  padding: 50px 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: add a subtle shadow */
+  border-radius: 10;
+  width: 400px;
+  height: 500px;
+}
+
+
+input[type="text"], input[type="password"] {
+    width: 100%; /* Set the width of both inputs to fill their container */
+    padding: 10px; /* Adjust padding for both fields to be the same */
+    margin: 10px 0; /* Add some space between fields */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    font-size: 16px; /* Make font size consistent */
+    border-radius: 5px; /* Add a consistent border radius */
+    border: 1px solid #ccc; /* Same border style */
+  }
+  
+  input[type="submit"] {
+    width: 20%; /* Ensure the button spans the full width */
+    padding: 10px;
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Slight hover effect */
+  }
+
+  .Login-wrapper h1 {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .login-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    gap: 30px;
+  }
+
+  .signup-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 30px;
+  }

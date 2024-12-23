@@ -1,0 +1,60 @@
+.table-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Creates space between the two columns */
+    gap: 20px; /* Adjust spacing between columns */
+    margin: 50px;
+    flex-wrap: wrap; /* Wraps columns on smaller screens */
+}
+
+.column {
+    flex: 1; /* Each column takes up equal space */
+    max-width: 45%; /* Limits the column width */
+    margin-bottom: 30px;
+
+}
+
+.table-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%; /* Ensures table spans the full column width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.highlight {
+    color: green;
+    font-weight: bold;
+}
+
+.lowHighlight {
+    color: red;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        flex-direction: column; /* Stacks columns vertically on smaller screens */
+        gap: 10px;
+    }
+    .column {
+        max-width: 100%; /* Ensures full width for each column on smaller screens */
+    }
+}

@@ -1,0 +1,315 @@
+.savings-plan-summary {
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .summary-card {
+    background-color: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+  }
+  
+  .summary-card.highlight {
+    border: 2px solid #007bff;
+    color: #4CAF50;
+  }
+  
+  .summary-card h2, .summary-card h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .value {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .description {
+    color: #555;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .invest-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    height: 549px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .detail-item h4 {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  .progress-bar {
+    height: 20px;
+    border-radius: 10px;
+  }
+
+  .chart-container-2 {
+    width: 100%;             /* Full width of the container */
+    max-width: 900px;       /* Increase max-width to make the chart larger */
+    height: 500px;           /* Increase height for more vertical space */
+    margin: 0 auto;  
+    
+    
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/* Center the chart horizontally */
+  }
+  
+  .chart-container-3 {
+    width: 100%;             /* Full width of the container */
+    max-width: 800px;        /* Increase max-width to make the pie chart larger */
+    height: 500px;           /* Increase height for consistency */
+    margin: 0 auto;          /* Center the chart horizontally */
+  }
+  
+  
+  .summary-card h2, .summary-card h3 {
+    color: #333; /* Change to dark gray or any color you prefer */
+  }
+  
+  .value {
+    color: #007bff; /* Change to black or any color you prefer */
+  }
+  
+  .description {
+    color: #666; /* Adjust as needed for your description text */
+  }
+
+  .projections-row {
+    margin-top: 25px;
+  }
+  
+
+
+  .summary-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333333;
+  }
+  
+  .summary-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .summary-warning {
+    color: #ff4c4c;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .summary-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .summary-button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+  /* Container for dashboard cards */
+.dashboard-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Card styles */
+.dashboard-card {
+  background: #ffffff;
+  border: 2px solid #1a73e8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Card heading */
+.dashboard-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.savings-container {
+  max-height: 800px;
+}
+
+/* Progress bar styles */
+.progress-bar-container {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progress-bar {
+  width: 60%; /* Adjust this percentage dynamically */
+  height: 100%;
+  background-color: #1a73e8;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-bar .progress-label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Progress description */
+.progress-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Spending section */
+.spending-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spending-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #34a853; /* Green for positive value */
+  margin-bottom: 15px;
+}
+
+/* Button styles */
+.view-button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #155dbf;
+}
+
+.view-button:active {
+  background-color: #0d47a1;
+}
+
+
+.investment-projections {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+
+}
+
+.projections-title {
+  text-align: center;
+}
+
+.investment-projections h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.projections-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+}
+
+.projections-header p {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.projections-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projections-list li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+
+.summary-container {
+  background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);/* Center the chart horizontally */
+}
+
+.savings-container {
+  background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.savings-container h2 {
+  padding-bottom: 40px;
+  margin: 0;
+  font-weight: 500;
+}
